@@ -54,7 +54,7 @@ export default function Card(props) {
                 <Info>Profile: <URL href={user.url}>{user.url}</URL></Info>
                 <Info>Followers: {user.followers}</Info>
                 <Info>Follower Data: <ul>{followerData.map(fol => {
-                    return <li>{fol}</li>
+                    return <li>{fol.login}</li>
                 })}</ul></Info>
                 <Info>Following: {user.following}</Info>
                 {user.bio !== null &&  <Info>Bio: {user.bio}</Info>}
